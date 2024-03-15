@@ -1,0 +1,7 @@
+{
+  "speed": 0.5,
+  "alpha": 0.9,
+  "maxSpeed": 500,
+  "displaySpeed": 80,
+  "timeout": 1500
+}

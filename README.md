@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+Light and Wonder Frontend Test Raphael Bier
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `npm install`
 
-## Available Scripts
-
-In the project directory, you can run:
+Install the dependencies.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode, It will open a new window in your default browser accessible here : "http://localhost:3000".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Developer Comments :
 
-### `npm test`
+This was an exciting opportunity to learn about Pixi.JS, which I found great to add more feature onto the basic Canvas element.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If I were to expand further on that project, I would probably start by adding an auto play functionnality, and create a Websocket server to feed the results to the frontend application instead of getting the results from a json file.
 
-### `npm run build`
+A payment provider such as Stripe could also be a nice next step for that kind of project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Adding more onto that project, Having a few more assets could have helped expanding a bit on the design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I made some assumptions about the winner sequence. Here is the way I interpreted the winner sequence format :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"36:113425268@BGS:nickname:0.20:2147483647:1:1@1:EUR:2"
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"36" Would be the ID of the Game played
+"113425268@BGS" Would be the user ID
+"nickname" Would be the user nickname
+"0.20" Would be the amount remaining on the user account
+"2147483647" Would be the ID of this particular roll
+"1" Would be the amount the user spent on the roll
+"1@1" Would be the way of matching the pot (So in this case for 1 Euro spent by the user, We would match it in the pot)
+"EUR" Would be the currency
+"2" Would be the total amount of the pot (And in this case the amount won by the user).
