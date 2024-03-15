@@ -1,4 +1,6 @@
-Light and Wonder Frontend Test Raphael Bier
+Light and Wonder Frontend Test Raphael Bier 
+
+(I was unable to send the project ZIP by mail, because it contained .js files)
 
 ### `npm install`
 
